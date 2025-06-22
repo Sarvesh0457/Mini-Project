@@ -249,3 +249,11 @@
 .coming-soon-message {
     animation: fadeIn 2s ease-in-out;
 }
+
+
+/* events page */
+.events{
+  background: url(eventbg.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
