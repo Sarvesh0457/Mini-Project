@@ -102,3 +102,101 @@
 #check:checked ~ .sidebar_menu .btn_two i{
   opacity: 1;
 }
+
+/* gallery page */
+.gallery{
+  background: url(gallery.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative; /* Ensure gallery section is positioned relative */
+  z-index: 0; /* Keeps it at the bottom */
+}
+.navbar {
+  /* background-color: transparent !important; Make navbar transparent */
+  padding: 20px;
+  height: 60px;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.navbar-nav li a{
+  color: #E8988A;
+}
+.navbar-brand{
+  color: #E8988A;
+}
+/* Ensure navbar-toggler is visible */
+.navbar-toggler {
+    border: none !important;
+    background-color: transparent !important;
+}
+/* Ensure navbar-toggler-icon is visible */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 fill=%22currentColor%22 class=%22bi bi-list%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M2 3h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 7h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zM2 11h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z%22/%3E%3C/svg%3E');
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+.navbar-nav li a:hover {
+  color: #f8f9fa;
+  font-size: 1.2em;
+  transition: font-size 0.3s ease-in-out;
+}
+/* Gallery Section */
+.gallery-container {
+    /* background-color: rgba(0, 0, 0, 0.4); Slight dark overlay */
+    color: #fff;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.gallery-caption h5 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.gallery-caption p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Responsive design for gallery */
+@media (max-width: 768px) {
+    .gallery-item {
+        margin-bottom: 15px;
+        margin-top: 70px;
+    }
+}
