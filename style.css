@@ -257,3 +257,6 @@
   background-size: cover;
   opacity: 0.8;
 }
+.card .card-body a{
+  color: black;
+}
