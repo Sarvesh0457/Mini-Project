@@ -255,8 +255,14 @@
 .events{
   background: url(eventbg.jpg);
   background-size: cover;
-  opacity: 0.8;
 }
 .card .card-body a{
   color: black;
+}
+
+/* store page */
+.store{
+  background: url(storebg.jpg);
+  height: 100vh;
+  background-size: cover;
 }
