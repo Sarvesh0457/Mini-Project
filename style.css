@@ -105,7 +105,7 @@
 
 /* gallery page */
 .gallery{
-  background: url(gallery.jpg);
+  background: url(gallerybg.jpg);
   height: 100vh;
   background-size: cover;
   position: relative; /* Ensure gallery section is positioned relative */
@@ -203,7 +203,7 @@
 
 /* exhibits page */
 .exhibits {
-    background: url(exhibits.png);
+    background: url(exhibitsbg.png);
     background-size: cover;
     opacity: 0.7;
     position: relative;
@@ -262,15 +262,17 @@
 
 /* store page */
 .store{
-  background: url(new4.jpg);
+  background: url(storebg.jpg);
   height: 100vh;
   background-size: cover;
-  /* opacity: 0.9; */
+}
+.store h1{
+  color: #EEEFE0;
 }
 
 /* contact page */
 .contact{
-  background: url(feedback.jpg);
+  background: url(feedbackbg.jpg);
   height: 100vh;
   background-size: cover;
 }
